@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
         submitBtn.disabled = true;
         
         // Отправка через EmailJS
-        emailjs.sendForm('service_dz6iucm', 'template_jorf4mh', this)
+        emailjs.sendForm("service_dz6iucm","template_713crpe", this)
             .then(function() {
                 formMessage.textContent = 'Сообщение отправлено успешно!';
                 formMessage.className = 'form-message success';
