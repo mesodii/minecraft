@@ -1,6 +1,6 @@
 // Инициализация EmailJS
 (function() {
-    emailjs.init("user_x0I8WzIy80sGXvSVm");
+    emailjs.init("x0I8WzIy80sGXvSVm");
 })();
 
 // Мобильное меню
