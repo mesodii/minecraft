@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Site</title>
+    <link rel="stylesheet" href="scripts/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <div class="logo-block"></div>
+                    <span>Minecraft World</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#about">О Майнкрафт</a></li>
+                    <li><a href="#gallery">Галерея</a></li>
+                    <li><a href="#feedback">Обратная связь</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Добро пожаловать в мир Minecraft</h1>
+                <p>Исследуй, строй, выживай!</p>
+                <a href="#feedback" class="btn">Написать нам</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>О Minecraft</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Игра где ты можешь строить что угодно из блоков.</p>
+                    <p>Есть режимы:</p>
+                    <ul>
+                        <li>Творческий</li>
+                        <li>Выживание</li>
+                        <li>Хардкор</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <div class="minecraft-image"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Галерея</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-img img1"></div>
+                    <h3>Постройки</h3>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img img2"></div>
+                    <h3>Выживание</h3>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img img3"></div>
+                    <h3>Крафтинг</h3>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img img4"></div>
+                    <h3>Мобы</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="feedback" class="feedback">
+        <div class="container">
+            <h2>Форма обратной связи</h2>
+            <p class="feedback-subtitle">Напиши нам если есть вопросы</p>
+            
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" required placeholder="Твой ник">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="example@gmail.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Тема:</label>
+                    <input type="text" id="subject" name="subject" required placeholder="О чём хочешь спросить">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Сообщение:</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Текст сообщения..."></textarea>
+                </div>
+                
+                <button type="submit" class="btn submit-btn">Отправить</button>
+            </form>
+            
+            <div id="form-message" class="form-message"></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Бодрова Марина © 2025</p>
+        </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
